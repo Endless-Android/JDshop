@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+
+    // 自定义不能滑动的ViewPager
+
+    <com.example.endless.jdshop.ui.view.NoScrollViewPager
+        android:id="@+id/my_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    </com.example.endless.jdshop.ui.view.NoScrollViewPager>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#339C9A9C"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        >
+
+        //android:button="@null" 去除RadioButton的小圆圈样式
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/home_selector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_short"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/short_selector"
+            android:button="@null"
+            android:gravity="center_horizontal"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/discover_selector"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_shopping_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/shopping_cart_selector"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/my_selector"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

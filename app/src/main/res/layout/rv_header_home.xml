@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home_categeoy01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/category1"/>
+
+        <ImageButton
+            android:id="@+id/home_categeoy02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/category2"/>
+
+        <ImageButton
+            android:id="@+id/home_categeoy03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/category3"/>
+
+        <ImageButton
+            android:id="@+id/home_categeoy04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@mipmap/category4"/>
+
+        <ImageButton
+            android:id="@+id/home_categeoy05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/category5"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/cuxiaokuaibao"/>
+
+    <ViewFlipper
+        android:id="@+id/home_vf"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:inAnimation="@anim/push_up_in"
+        android:outAnimation="@anim/push_up_out"/>
+
+
+    <TextView
+        android:id="@+id/home_tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/miaosha"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="01:10:07"/>
+
+
+    <ImageButton
+        android:id="@+id/home_flashsales"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@mipmap/xianshi"/>
+
+    <ImageButton
+        android:id="@+id/home_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/tuijian"/>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_bottom_vp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
